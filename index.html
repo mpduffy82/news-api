@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>NewsAPI V1</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- REQUIREMENTS 
+        Page requires a key.js file with the following format
+        var APIKEY = "apikey from newsapi.org" -->
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            text-align:center;
+            color:white;
+            font-family: 'Caveat', cursive;
+            font-size: 70px;
+        }
+        li {
+            font-size: 18px;
+            color:white;
+        }
+        #form {
+            text-align:center;
+        }
+        img {
+            height: 200px;
+            border-radius: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get ya' news hea!</h1>
+    <div id="form" class="container">
+        <form id="source">
+            <div class="form-group">
+                <select id="selection">
+                    <option disabled selected>Choose ya' source hea</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Show me articles</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <ul id="articleList">
+            
+        </ul>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="key.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
